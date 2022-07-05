@@ -58,6 +58,6 @@ app.post("/work", function(req,res){
 
 /* ---------------------server started-------------------------*/
 
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000 , function() { /*to launch on heroku*/
   console.log("Server started on port 3000");
 });
